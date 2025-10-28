@@ -216,7 +216,7 @@
   init.then(() => {
     // Make sure the results container is there
     if (!$(sidebarSelector)[0]) {
-      $("#rcnt").append('<div id="rhs"></div>');
+      $("#rcnt").append('<div id="rhs" class="TQc1id k5T88b vVVcqf e0KErc"></div>');
     }
 
     injectResultsContainer();

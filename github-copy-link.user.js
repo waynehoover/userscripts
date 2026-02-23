@@ -4,7 +4,7 @@
 // @downloadURL  https://github.com/waynehoover/userscripts/raw/main/github-copy-link.user.js
 // @updateURL    https://github.com/waynehoover/userscripts/raw/main/github-copy-link.user.js
 // @version      0.0.1
-// @description  Press 's' to copy the current PR/issue as a clickable HTML link
+// @description  Press 'e' to copy the current PR/issue as a clickable HTML link
 // @author       Wayne Hoover
 // @match        https://github.com/*
 // @grant        none
@@ -16,7 +16,7 @@
   document.addEventListener("keydown", function (e) {
     if (e.target.matches("input, textarea, select, [contenteditable]")) return;
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "s") copyLink();
+    if (e.key === "e") copyLink();
   });
 
   function copyLink() {
